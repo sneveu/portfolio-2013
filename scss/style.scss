@@ -1,0 +1,24 @@
+@import "reset";
+
+// General
+// =====================
+
+body {
+	background-color:#efede3;
+	font-size:13px;
+	color:#efede3;
+}
+
+// Sections
+// =====================
+
+@import "fontello";
+@import "header";
+@import "blog";
+@import "worklist";
+@import "workpiece";
+@import "about";
+
+
+
+

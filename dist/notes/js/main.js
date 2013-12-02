@@ -1,0 +1,1 @@
+$(function(){function e(e){var t=e.currentTarget.id;console.log(t),t=="nav_about"?$("#head #title").html("Bio"):t=="nav_work"?$("#head #title").html("Work"):t=="nav_notes"?$("#head #title").html("Notes"):t=="nav_contact"&&$("#head #title").html("Email me")}function t(){$("#head #title").html("Simon Neveu")}$("#head a").mouseover(function(t){e(t)}).mouseout(function(e){t(e)})});

@@ -1,0 +1,425 @@
+@import "reset";
+
+body {
+	background-color:#efede3;
+	font-size:13px;
+	color:#efede3;
+}
+
+#head {
+	position:relative;
+	z-index:3;
+}
+
+#headTemp {
+	position:absolute;
+	top:0;
+	width:100%;
+	z-index:2;
+}
+
+header {
+	background-color:#068e59;
+	color:#81bdbb;
+	position:relative;
+	//width:100%;
+	//min-width: 960px;
+	height: 30px;
+	top: 8px;
+	display:inline-block;
+}
+
+	nav {
+		//width:960px;
+		//margin:0 auto;		
+		letter-spacing:1px;		
+		position:relative;
+		padding-top:2px;
+		display:table;
+		color:#efede3;
+		text-decoration:none;			
+		text-transform:uppercase;
+		font-size:1.2em;
+
+		#nav_about, #nav_work, #nav_notes, #nav_contact {
+			//width:20%;
+			display:inline-block;
+			padding:0 8px;
+		}
+
+		a, a:visited {
+			font-size:1.2em;
+			color:#efede3;
+			text-decoration:none;
+			-webkit-transition: font-size .1s ease, -webkit-transform .1s ease;
+			-moz-transition: font-size .1s ease, -moz-transform .1s ease;
+			-o-transition: font-size .1s ease, -o-transform .1s ease;
+			transition: font-size .1s ease, transform .1s ease;
+
+
+			&:hover { 
+				font-size:1.35em;
+				vertical-align: top;
+				color:#fff;
+				transform: rotate(-5deg);
+				-ms-transform: rotate(-5deg); /* IE 9 */
+				-webkit-transform: rotate(-5deg); /* Safari and Chrome */
+			}
+		}
+
+		#title { 
+			width:150px;
+			display:inline-block;
+			font-family: 'Montserrat', sans-serif;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke: 0.20px;
+			position:relative;
+			top:-1px;
+			margin:0 15px 0 20px;
+		}
+
+		#nav_notes, #nav_contact { text-align:right;}
+		.icon-mail span{
+			display:none;
+			position:absolute;
+			background-color:#068e59;
+			top: 0;
+			right: 0;
+			height: 20px;
+			padding-top: 15px;
+			text-align: right;
+			color:#efede3; 
+			border-bottom:1px solid #efede3;
+			font-size:0.6em;
+			font-family: 'Ubuntu', sans-serif;
+			text-transform:uppercase;
+		}
+		.icon-mail:hover { 
+			span {display:block;}
+		}
+	}
+
+.colourChangeBg {
+		-moz-transition: background-color .1s, border-color .2s;
+		-webkit-transition: background-color .1s, border-color .2s;
+		-o-transition: background-color .1s, border-color .2s;
+		transition: background-color .1s, border-color .2s;
+} //Fade text colour change
+
+#work_list {
+	display:none;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 0.50px;
+	text-transform:uppercase;
+	font-size:1.5em;
+	letter-spacing:1px;
+	width:960px;
+	margin:0 auto;
+	position:relative;
+	z-index:1;
+
+	ul {
+		display:none;
+		text-align:center;
+		margin:0 auto;
+		top:50%;
+		left:50%;
+		position:absolute;
+		z-index:100;
+		background-color: #068e59;
+		padding: 20px 30px;
+
+		li {
+			list-style-type: none;
+			padding-bottom:18px;
+			color:#efede3;
+			border-color:#efede3;
+
+			&:last-child {padding-bottom:0;}
+
+			a {
+				text-decoration:none;
+				color:#efede3;
+				
+				
+
+				&:hover {
+					border-bottom:1px solid #efede3;
+				}
+			}
+
+		}
+	}
+
+	#work_list_thumbs {
+		position:relative;
+		height:700px;
+		margin-top:60px;
+
+		.thumb {
+			position:absolute;
+			left:50%;
+			top:50%;
+			//display:none;
+			//border:6px solid #068e59;
+			-moz-transition: -moz-transform .2s;
+			-webkit-transition: -webkit-transform .2s;
+			-o-transition: -o-transform .2s;
+			transition: transform .2s;
+		}
+
+		#lucille_thumb {
+			left:auto;
+			right:0;
+			margin-top:-270px;
+			z-index:2;
+		}
+		#pacific_screen_thumb {
+			margin-left:-50%;
+			margin-top:-140px;
+			z-index:1;
+			//-webkit-filter: blur(0.8px);
+			//filter: blur(0.8px);
+		}
+		#camry_effect_thumb {
+			margin-left:-360px;
+			margin-top:-193px;
+			z-index:0;
+			//-webkit-filter: blur(0.8px);
+			//filter: blur(0.8px);
+		}
+		#resn_mobile_thumb {
+			margin-left:-10px;
+			margin-top:-155px;
+			z-index:0;
+			//-webkit-filter: blur(1.0px);
+			//filter: blur(1.0px);
+		}
+		#face_arcade_thumb {
+			margin-left:-113px;
+			margin-top:-87px;
+			z-index:0;
+			//-webkit-filter: blur(1.2px);
+			//filter: blur(1.2px);
+		}
+		#rhizopods_thumb {
+			margin-left:-248px;
+			margin-top:-323px;
+			z-index:0;
+			//-webkit-filter: blur(1.6px);
+			//filter: blur(1.6px);
+		}
+		#puls_alpha_thumb {
+			margin-left:-345px;
+			margin-top:-174px;
+			z-index:0;
+			//-webkit-filter: blur(2.0px);
+			//filter: blur(2.0px);
+		}
+
+		.top_z_index {
+			z-index:99 !important;
+		}
+	}
+
+	
+
+}
+
+#blog {
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 0.50px;
+	text-transform:uppercase;
+	font-size:1.5em;
+	color:#232323;
+	letter-spacing:1px;
+	max-width:960px;
+	margin:60px auto;
+	//padding:20px;
+
+	.entry-item {
+		margin-bottom:120px;
+	}
+
+	p {
+		font-size: 0.7em;
+		text-transform: none;
+		font-family: 'Ubuntu', sans-serif;
+		line-height: 1.8;
+	}
+}
+
+#work_piece {
+	display:none;
+	width:960px;
+	margin-bottom:65px;
+	margin:0 auto;
+
+	#work_piece_text {
+		max-width:960px;
+		margin:0 auto;
+		padding-top:60px;
+
+	}
+
+	#title {
+		font-family: 'Montserrat', sans-serif;
+		font-size:3.4em;
+		text-transform:uppercase;
+		letter-spacing: 2px;
+		margin-bottom:40px;
+		color:#454240;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke: 0.20px;
+	}
+
+	#notes, #info, #roles  {
+		display:inline-block;
+		vertical-align:top;
+		overflow:hidden;
+		font-family: 'Ubuntu', sans-serif;
+		color:#454240;
+		line-height:2.3;
+		margin-bottom:34px;
+	}
+
+	#notes {
+		padding-right:5%;
+		font-size:1.1em;
+		p {	display:block; margin:0; }
+		a, a:visited { color:#454240;}
+	}
+	#info {
+		position:relative;
+		width:44%;
+		padding-right:5%;
+		text-align:justify;
+		line-height:2;
+		p { margin:0; margin-bottom:10px; }
+	}
+	#roles {
+		width:24%;
+		em { text-decoration:underline; font-style:normal; font-size:1.1em;}
+		p {	
+			font-family: 'Montserrat', sans-serif;
+			text-decoration:none;
+			display:block;
+			text-transform:uppercase;
+			font-size:1.8em;
+			margin:0;
+			line-height:1.7;
+			padding-left: 30px;
+			text-indent: -26px;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke: 0.20px;
+		}
+	}
+
+	#images img {
+		width:100%;
+		margin-bottom:30px;
+		border:1px solid #ddd;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+}
+
+
+#about {
+	display:none;
+	position:absolute;
+	width:100%;
+	min-width: 960px;
+	height:100%;
+	//top:-100%;
+	background-color:#068e59;
+	z-index:2;
+	//background-image: url('../img/bg.svg'), url('../img/bg.svg');
+	//background-repeat:repeat-x, repeat-x;
+	//background-position:left bottom, 82px 95%;
+	//background-size:200px 180px;
+
+	#about_text {
+		max-width:960px;
+		margin:0 auto;
+		padding-top:105px;
+		a, a:visited { color:#efede3; }
+		a:hover { color:#d2e0d8; }
+	}
+
+	#title {
+		font-family: 'Montserrat', sans-serif;
+		font-size:4.2em;
+		text-transform:uppercase;
+		letter-spacing: 2px;
+		margin-bottom:20px;
+		color:#efede3;
+	}
+
+	#contact {
+		width:80%;
+		display:inline-block;
+		vertical-align:top;
+		overflow:hidden;
+		font-family: 'Ubuntu', sans-serif;
+		font-weight:400;
+		color:#efede3;
+		line-height:1.5;
+		margin-bottom:40px;
+		font-size:1.6em;
+		text-transform:uppercase;
+		letter-spacing:1px;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke: 0.20px;
+	}
+
+	#bio {
+		margin-left:10%;
+		width:70%;
+		display:inline-block;
+		vertical-align:top;
+		overflow:hidden;
+		font-family: 'Ubuntu', sans-serif;
+		font-weight:100;
+		color:#efede3;
+		line-height:2.3;
+		margin-bottom:30px;
+		text-align:justify;
+
+		-moz-column-count: 2;
+       -moz-column-gap: 40px;
+       -webkit-column-count: 2;
+       -webkit-column-gap: 40px;
+
+       p {
+	       	margin:0;
+	       	margin-bottom: 8px;
+	       	-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke: 0.20px;
+		}
+	}
+
+	#work_link {
+		display:inline-block;
+		font-size:1.6em;
+		text-decoration:underline;
+		text-transform:uppercase;
+		font-family: 'Ubuntu', sans-serif;
+		font-weight:400;
+		position: relative;
+		top: 150px;
+		left: 60px;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke: 0.20px;
+	}
+}
+
+@import "fontello";
+
+
+
+

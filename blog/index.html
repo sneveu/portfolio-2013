@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{% for post in paginator.posts %}
+<div class="entry-item">
+	<h4>{{ post.date | date_to_long_string }}</h4>
+    <h1><span>&#35;{{post.number}}</span>{{ post.title }}</h1>
+    <p>{{ post.content }}</p>
+    <!-- <p>
+      <a href="{{ post.url }}">Read Post</a>
+    </p> -->
+</div>
+{% endfor %}
+
+{% include pagination.html %}

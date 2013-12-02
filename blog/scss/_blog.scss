@@ -1,0 +1,42 @@
+
+// Blog section
+// ====================
+
+#blog {
+	font-family: 'Monda', sans-serif;
+	text-transform:uppercase;
+	font-size:1.5em;
+	color:#232323;
+	max-width:960px;
+	width:60%;
+	margin:60px auto;
+	//padding:20px;
+
+	.entry-item {
+		margin-bottom:120px;
+	}
+
+	h1 { margin:5px 0; font-size:1.8em; /*-webkit-font-smoothing: antialiased; -webkit-text-stroke: 0.50px;*/ letter-spacing:1px;
+		span {padding-right: 22px;}
+	}
+	h2 { font-family: 'Monda', sans-serif; font-size:1em; text-transform: none;}
+	h4 { margin:10px 0; font-weight: 400; font-size: 0.75em; color: #999; }
+
+	p {
+		font-size: 0.75em;
+		text-transform: none;
+		font-family: 'Monda', sans-serif;
+		line-height: 1.8;
+		text-align:justify;
+	}
+
+	ol {
+		margin-left:40px; font-size:0.7em; font-weight:100;
+		li p {font-size:1.1em}
+	}
+
+	ul {
+		list-style-type:none;
+		li { display:inline-block; }
+	}
+}

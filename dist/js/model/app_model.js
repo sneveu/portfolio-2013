@@ -1,0 +1,1 @@
+define(["backbone"],function(e){var t=e.Model.extend({PAGES:{HOME:"HOME",ABOUT:"ABOUT",WORKLIST:"WORKLIST",WORKPIECE:"WORKPIECE"}});return new t});

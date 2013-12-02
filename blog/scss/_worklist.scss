@@ -1,0 +1,117 @@
+#work_list {
+	display:none;
+	font-family: 'Montserrat', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-stroke: 0.50px;
+	text-transform:uppercase;
+	font-size:1.5em;
+	letter-spacing:1px;
+	width:960px;
+	margin:0 auto;
+	position:relative;
+	z-index:1;
+
+	ul {
+		display:none;
+		text-align:center;
+		margin:0 auto;
+		top:50%;
+		left:50%;
+		position:absolute;
+		z-index:100;
+		background-color: #068e59;
+		padding: 20px 30px;
+
+		li {
+			list-style-type: none;
+			padding-bottom:18px;
+			color:#efede3;
+			border-color:#efede3;
+
+			&:last-child {padding-bottom:0;}
+
+			a {
+				text-decoration:none;
+				color:#efede3;
+
+
+
+				&:hover {
+					border-bottom:1px solid #efede3;
+				}
+			}
+		}
+	}
+
+	#work_list_thumbs {
+		position:relative;
+		height:700px;
+		margin-top:60px;
+
+		.thumb {
+			position:absolute;
+			left:50%;
+			top:50%;
+			//display:none;
+			//border:6px solid #068e59;
+			-moz-transition: -moz-transform .2s;
+			-webkit-transition: -webkit-transform .2s;
+			-o-transition: -o-transform .2s;
+			transition: transform .2s;
+		}
+
+		#lucille_thumb {
+			left:auto;
+			right:0;
+			margin-top:-270px;
+			z-index:2;
+		}
+		#pacific_screen_thumb {
+			margin-left:-50%;
+			margin-top:-140px;
+			z-index:1;
+			//-webkit-filter: blur(0.8px);
+			//filter: blur(0.8px);
+		}
+		#camry_effect_thumb {
+			margin-left:-360px;
+			margin-top:-193px;
+			z-index:0;
+			//-webkit-filter: blur(0.8px);
+			//filter: blur(0.8px);
+		}
+		#resn_mobile_thumb {
+			margin-left:-10px;
+			margin-top:-155px;
+			z-index:0;
+			//-webkit-filter: blur(1.0px);
+			//filter: blur(1.0px);
+		}
+		#face_arcade_thumb {
+			margin-left:-113px;
+			margin-top:-87px;
+			z-index:0;
+			//-webkit-filter: blur(1.2px);
+			//filter: blur(1.2px);
+		}
+		#rhizopods_thumb {
+			margin-left:-248px;
+			margin-top:-323px;
+			z-index:0;
+			//-webkit-filter: blur(1.6px);
+			//filter: blur(1.6px);
+		}
+		#puls_alpha_thumb {
+			margin-left:-345px;
+			margin-top:-174px;
+			z-index:0;
+			//-webkit-filter: blur(2.0px);
+			//filter: blur(2.0px);
+		}
+
+		.top_z_index {
+			z-index:99 !important;
+		}
+	}
+
+}

@@ -1,0 +1,98 @@
+
+// Work Piece section
+// ===============================
+
+#work_piece {
+	display:none;
+	width:960px;
+	margin-bottom:65px;
+	margin:0 auto;
+
+	#close {
+		width:30px;
+		height:30px;
+		background-color: black;
+		text-align: left;
+		font-size: 1.2em;
+		font-weight: 400;
+		font-family: 'Montserrat';
+		padding-left:12px;
+		position: absolute;
+		top: 8px;
+		line-height: 30px;
+		right: 0;
+
+		span {width:100%; height:100%;}
+
+	}
+
+	#work_piece_text {
+		max-width:960px;
+		margin:0 auto;
+		padding-top:60px;
+
+	}
+
+	#title {
+		font-family: 'Montserrat', sans-serif;
+		font-size:3.4em;
+		text-transform:uppercase;
+		letter-spacing: 2px;
+		margin-bottom:40px;
+		color:#454240;
+		-webkit-font-smoothing: antialiased;
+		-webkit-text-stroke: 0.20px;
+	}
+
+	#notes, #info, #roles  {
+		display:inline-block;
+		vertical-align:top;
+		overflow:hidden;
+		font-family: 'Monda', sans-serif;
+		color:#454240;
+		line-height:2.3;
+		margin-bottom:34px;
+	}
+
+	#notes {
+		padding-right:5%;
+		font-size:1.1em;
+		p {	display:block; margin:0; }
+		a, a:visited { color:#454240;}
+	}
+	#info {
+		position:relative;
+		width:42%;
+		padding-right:5%;
+		text-align:justify;
+		line-height:2;
+		p { margin:0; margin-bottom:10px; }
+	}
+	#roles {
+		width:24%;
+		em { text-decoration:underline; font-style:normal; font-size:1.1em;}
+		p {
+			font-family: 'Montserrat', sans-serif;
+			text-decoration:none;
+			display:block;
+			text-transform:uppercase;
+			font-size:1.8em;
+			margin:0;
+			line-height:1.7;
+			padding-left: 30px;
+			text-indent: -26px;
+			-webkit-font-smoothing: antialiased;
+			-webkit-text-stroke: 0.20px;
+		}
+	}
+
+	#images img {
+		width:100%;
+		margin-bottom:30px;
+		border:1px solid #ddd;
+		-webkit-border-radius: 8px;
+		-moz-border-radius: 8px;
+		border-radius: 8px;
+	}
+
+}

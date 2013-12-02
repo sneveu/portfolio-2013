@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Simon Neveu — Notes</title>
+    <meta name="viewport" content="">
+    <meta name="description" content="Things I have learned in my web life so far">
+    <link href='http://fonts.googleapis.com/css?family=Monda|Montserrat' rel='stylesheet' type='text/css'>
+    <link href="/css/style.css" rel="stylesheet">
+    <script src="/js/libs/jquery-1.8.1.js"></script>
+    <script data-main="js/main" src="js/main.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></sc\
+ript>
+    <![endif]-->
+  </head>
+
+  <body>
+    <div id="head">
+      <header>
+        <nav>
+          <div id="title">Simon Neveu</div>        
+          <a href="/#about" id="nav_about"><i class="icon-info"></i></a>
+          <a href="/#work" id="nav_work"><i class="icon-folder"></i></a>
+          <a href="/notes" id="nav_notes"><i class="icon-article"></i></a>
+          <a href="mailto:simon@simonneveu.co.nz" target="_blank" id="nav_contact"><i class="icon-mail"></i></a>        
+          
+        </nav>
+      </script>
+    </div>
+
+    <div id="rootNode">
+      <div id="blog">
+
+<div class="row-fluid">
+  <div class="span8">
+    <h1>Use Font For Web Icons</h1>
+    <p class="muted">10 May 2013</p>
+
+    <p>If you&#8217;re looking at a 45px x 45px icon image on a high pixel-density screen with a pixel-density of 2 (basically, 2 pixels per pixel), you&#8217;ll need to save that image out at twice the size. A quick way to look at it would be to say image-size&#42;pixel-density.</p>
+
+<p>Because the web is viewed on screens with varying pixel-densities, with I believe 2 being the highest, up until recently I&#8217;ve saved icons out at 2 times their viewed size to make up for the extra pixels and then used css to specifically set the size of the image to be 45x45. This worked, but could be a long and inefficient process.</p>
+
+<p>This is where web fonts come in.</p>
+
+<p>Use them. Here&#8217;s why:</p>
+
+<ol>
+<li>
+<p>Webfonts are vector so are easily resized and look sharp on any high-res device.</p>
+</li>
+
+<li>
+<p>Only having to call the one webfont file, as opposed to several high and low res versions of icon images results in significantly less http requests and kbs for the end-user to download, making its also optimal for mobile.</p>
+</li>
+
+<li>
+<p>You can apply css styling to them. Great for css transitions.</p>
+</li>
+
+<li>
+<p>They&#8217;re super cross browser, unlike SVG.</p>
+</li>
+</ol>
+  </div>
+<!--   <div class="span4">
+    <h3>About Me</h3>
+
+<h4>Recent posts</h4>
+<ul>
+  
+    <li><a href="/2013/05/10/use-font-for-web-icons/">Use Font For Web Icons</a></li>
+  
+</ul>
+
+<p>Donec libero libero, bibendum non condimentum ac, ullamcorper at sapien.\
+ Duis feugiat urna vel justo cursus facilisis. Vivamus ligula dui, convalli\
+s a varius vitae, facilisis eget magna.</p>
+  </div> -->
+</div>
+
+	    </div>
+	</div>
+
+  </body>
+</html>

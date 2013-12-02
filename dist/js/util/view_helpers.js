@@ -1,0 +1,1 @@
+define(["jquery","underscore","handlebars"],function(e,t,n){n.registerHelper("image",function(e,r){t.isUndefined(r)&&(r=e);var i=t.map(r.hash,function(e,t){return t+'="'+e+'"'});return new n.SafeString('<img class="projectImg" src="'+n.Utils.escapeExpression(t.isFunction(e)?e(this):e)+'" '+n.Utils.escapeExpression(i.join(" "))+" />")})});

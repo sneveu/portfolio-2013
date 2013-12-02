@@ -1,0 +1,1 @@
+define(["router","model/app_model"],function(e,t){var n={init:function(){e.on("page",this.onRouterPage,this)},onRouterPage:function(e,n){t.set({page:e,pageOptions:n})}};return n.init(),n});

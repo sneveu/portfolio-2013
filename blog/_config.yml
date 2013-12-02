@@ -1,0 +1,8 @@
+name: "Simon Neveu — Notes"
+description: "Things I have learned in my web life so far"
+
+url: "http://localhost:4000"
+
+paginate: 5
+
+permalink: pretty

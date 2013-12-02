@@ -1,0 +1,100 @@
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+
+  <!-- Use the .htaccess and remove these lines to avoid edge case issues.
+       More info: h5bp.com/i/378 -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Simon Neveu — Digital</title>
+  <meta name="description" content="Simon Neveu. Freelance Digital Designer and Front-End Developer. From Wellington, New Zealand. simon@simonneveu.co.nz." />
+	<meta name="keywords" content="web design, wellington, new zealand, freelance, freelancer, contract, self-employed, developer, front-end developer, digital designer, graphic design, resn, portfolio, simon neveu, web, website design, build, employment, employ, hire, consultant, branding, logo, business, apps, make, websites, html5, css3, jquery" />
+	<meta property="og:title" content="" />
+	<meta property="og:description" content="" />
+	<meta property="og:image" content="" />
+
+  <link href='http://fonts.googleapis.com/css?family=Monda|Montserrat' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+  <script data-main="js/loader" src="js/libs/require.js"></script>
+</head>
+<body>
+
+  <div id="head">
+    <script id="header_holder" type="text/x-handlebars-template">
+    <header style="background-color:{{colour}}; color:{{textColour}}">
+
+      <nav>
+        <div id="title">Simon Neveu</div>
+        <a href="/#about" id="nav_about"><i class="icon-info"></i></a>
+        <a href="/#work" id="nav_work"><i class="icon-folder"></i></a>
+        <a href="/notes" id="nav_notes"><i class="icon-article"></i></a>
+        <a href="mailto:simon@simonneveu.co.nz" target="_blank" id="nav_contact"><i class="icon-mail"></i></a>
+
+      </nav>
+    </header>
+    </script>
+  </div>
+
+  <div id="rootNode">
+    <section id="work_list">
+      <ul class="colourChangeBg">
+        <script id="work_list_holder" type="text/x-handlebars-template">
+          {{#each projects}}<li><a href="#work/{{id}}" id="{{id}}" class="colourChange">{{title}}</a></li>{{/each}}
+        </script>
+      </ul>
+      <div id="work_list_thumbs">
+        <script id="work_list_thumbs_holder" type="text/x-handlebars-template">
+            {{#each projects}}<img src="{{thumbImage}}" id="{{id}}_thumb" class="thumb" />{{/each}}
+        </script>
+      </div>
+    </section>
+
+    <section id="work_piece">
+
+    </section>
+
+    <div id="about">
+      <div id="about_text">
+        <div id="title">Digital Designer and </br>Front-end Web Developer</div>
+        <div id="contact">If you need a new website, or are looking for some extra hands on a project you’re working on, please get in touch by emailing <a href="mailto:simon@simonneveu.co.nz" target="_blank">simon@simonneveu.co.nz</a></div>
+        <div id="bio">
+          <p>I'm based in Wellington, NZ and have over two years experience working on immersive web and mobile experiences for local industry force Resn, working in teams that have won FWA's, Pixel Awards, Best Awards, Webby Awards, Awwwards, and more along the way.</p>
+          <p>I've worked on projects for Google, Toyota, Hennessy, FedEx, EDF, Budweiser, and Carls Jr., as well as locals RNZAF, Lucille, Pacific Screen, Forest and Bird, and Smoking Not Our Future. You'll see a selection of them in the work section.</p>
+          <p>I'm now working freelance to help local businesses get themselves online, and as a means to pursue my own creative interests and collaborate with like-minded people on exciting new projects.</p>
+          <p>Websites are my specialty but I can also help with smartphone apps and branding too.</p>
+          <p>Technically, I use HTML5, CSS3, jQuery, and Javascript to build my websites, utilising libraries like Handlebars and require.js, and preprocessors like SASS (or LESS), to make the dev process even more efficient.</p>
+          <p>If you're keen to meet up about a new project you have coming up or just want to find out more about what I can offer, please feel free to <a href="mailto:simon@simonneveu.co.nz" target="_blank">email</a> me and I'll be in touch.</p>
+      </div>
+        <a href="#work" id="work_link">Work ></a>
+      </div>
+    </div>
+
+
+<!--     <div id="work_piece">
+
+    </div> -->
+  </div>
+
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39226466-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</body>
+</html>
