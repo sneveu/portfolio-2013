@@ -1,7 +1,7 @@
 Portfolio-2013
 ==============
 
-Hi Hover Studio,
+Hello there!
 
 This is the code for my portfolio site I created in Feb 2013.
 
